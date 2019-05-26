@@ -1,5 +1,7 @@
 ﻿using EncyklopediaZwierzat.Models;
+using EncyklopediaZwierzat.ViewModels;
 using Microsoft.AspNetCore.Mvc;
+using System.Linq;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -17,7 +19,15 @@ namespace EncyklopediaZwierzat.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            var zwierzeta = _zwierzeRepository.PobierzWszystkieZwierzeta().OrderBy(s => s.Nazwa); //11 posortowane zwierzaki po nazwie
+
+            var homeVM = new HomeVM()
+            {
+                Tytul = "Encyklopedia Zwierząt",
+                Zwierzeta = zwierzeta.ToList()
+            };
+
+            return View(homeVM); //12 przekazanie do widoku tytul i liste samochodow
         }
     }
 }

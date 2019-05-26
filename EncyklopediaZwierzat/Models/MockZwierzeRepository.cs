@@ -21,7 +21,9 @@ namespace EncyklopediaZwierzat.Models
             {
                 new Zwierze {Id=1,Nazwa ="Słoń", Rasa ="Szary", KrajWystepowania = "Indie", Odzywianie = "Roślinność", Srodowisko ="Ląd", Opis = "Bardzo duży przedstawiciel ssaków", SredniaDlugoscZycia = 90, CzyZnajdeGoWPolsce =true, ZdjecieUrl="/images/slon.jpg",MiniaturkaUrl ="/images/slon.jpg"},
                  new Zwierze {Id=2,Nazwa ="Rekin", Rasa ="Żarłacz", KrajWystepowania = "Ocean Atlantycki", Odzywianie = "Inne ryby", Srodowisko ="Woda", Opis = "Agresywny przedstawiciel ryb", SredniaDlugoscZycia = 50, CzyZnajdeGoWPolsce =false, ZdjecieUrl="/images/rekin.jpg",MiniaturkaUrl ="/images/rekin.jpg"},
-                  new Zwierze {Id=3,Nazwa ="Żubr", Rasa ="Europejski", KrajWystepowania = "Polska, Litwa, Rosja", Odzywianie = "Roślinność", Srodowisko ="Ląd", Opis = "Artefakt Puszczy Białowieskiej", SredniaDlugoscZycia = 40, CzyZnajdeGoWPolsce =true, ZdjecieUrl="/images/zubr.jpg",MiniaturkaUrl ="/images/zubr.jpg"}
+                  new Zwierze {Id=3,Nazwa ="Żubr", Rasa ="Europejski", KrajWystepowania = "Polska, Litwa, Rosja", Odzywianie = "Roślinność", Srodowisko ="Ląd", Opis = "Artefakt Puszczy Białowieskiej", SredniaDlugoscZycia = 40, CzyZnajdeGoWPolsce =true, ZdjecieUrl="/images/zubr.jpg",MiniaturkaUrl ="/images/zubr.jpg"},
+                  new Zwierze {Id=4,Nazwa ="RekinV2", Rasa ="Żarłacz", KrajWystepowania = "Ocean Atlantycki", Odzywianie = "Inne ryby", Srodowisko ="Woda", Opis = "Agresywny przedstawiciel ryb", SredniaDlugoscZycia = 50, CzyZnajdeGoWPolsce =false, ZdjecieUrl="/images/rekin.jpg",MiniaturkaUrl ="/images/rekin.jpg"},
+                  new Zwierze {Id=5,Nazwa ="ŻubrV2", Rasa ="Europejski", KrajWystepowania = "Polska, Litwa, Rosja", Odzywianie = "Roślinność", Srodowisko ="Ląd", Opis = "Artefakt Puszczy Białowieskiej", SredniaDlugoscZycia = 40, CzyZnajdeGoWPolsce =true, ZdjecieUrl="/images/zubr.jpg",MiniaturkaUrl ="/images/zubr.jpg"}
             };
         }
 

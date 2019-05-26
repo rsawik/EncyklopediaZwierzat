@@ -1,0 +1,37 @@
+﻿@model EncyklopediaZwierzat.ViewModels.HomeVM
+<!--okreslenie modelu widoku typu zwierze (lista zwierzat)-->
+
+<h2>@Model.Tytul</h2>
+
+@foreach (var zwierze in Model.Zwierzeta)
+{
+    <div class="col-sm-4 col-lg-4 col-md-4">
+        <div class="thumbnail">
+            <img src="@zwierze.MiniaturkaUrl" alt="" >
+            <div class="caption">
+                <h4 class="pull-right">@zwierze.Rasa</h4>
+                <h3>
+                    @zwierze.Nazwa
+                </h3>
+                <h3>
+                    Środowisko: @zwierze.Srodowisko 
+                </h3>
+                <h3>
+                   Średnia długość życia: @zwierze.SredniaDlugoscZycia.ToString() lat
+                </h3>
+                <h4>
+                    Odżywianie: @zwierze.Odzywianie
+                </h4>
+                <h4>
+                    Kraj Wystepowania: @zwierze.KrajWystepowania
+                </h4>
+                <p>
+                    @zwierze.Opis
+                </p>
+            </div>
+        </div>
+    </div>
+}
+
+
+

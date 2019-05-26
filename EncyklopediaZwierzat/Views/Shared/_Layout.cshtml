@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" /> <!-- dodawanie osblugi styli boostrap css 12-->
+    <link rel="stylesheet" href="~/content/site.css" /><!-- dodawanie osblugi site.css do wszystkich stron ktore beda korzystac z tego layoutu 13-->
+
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div class="container body-content">
+        <div class="row">
+            @RenderBody() <!-- generowanei zawartosci strony 14-->
+        </div>
+        
+    </div>
+</body>
+</html>
