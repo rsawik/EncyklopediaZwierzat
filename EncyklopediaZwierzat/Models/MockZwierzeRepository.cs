@@ -36,5 +36,20 @@ namespace EncyklopediaZwierzat.Models
         {
             return zwierzeta.FirstOrDefault(z => z.Id == zwierzeID); // pierwsze zwierze dla ktorego id bedzie = przekazanemu identyfikatorowi, jesli nie ma to zwraca domyslna
         }
+
+        public void DodajZwierze(Zwierze zwierze)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void EdytujZwierze(Zwierze zwierze)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void UsunZwierze(Zwierze zwierze)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

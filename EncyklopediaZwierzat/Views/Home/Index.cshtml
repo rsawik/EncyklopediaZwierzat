@@ -1,17 +1,17 @@
-﻿@model EncyklopediaZwierzat.ViewModels.HomeVM
+﻿@model HomeVM
 <!--okreslenie modelu widoku typu zwierze (lista zwierzat)-->
 
 <h2>@Model.Tytul</h2>
 
 @foreach (var zwierze in Model.Zwierzeta)
 {
-    <div class="col-sm-4 col-lg-4 col-md-4">
+    <div class="col-sm-4">
         <div class="thumbnail">
             <img src="@zwierze.MiniaturkaUrl" alt="" >
             <div class="caption">
                 <h4 class="pull-right">@zwierze.Rasa</h4>
                 <h3>
-                    @zwierze.Nazwa
+                    <a asp-controller="Home" asp-action="Szczegoly" asp-route-id="@zwierze.Id">@zwierze.Nazwa</a> 
                 </h3>
                 <h3>
                     Środowisko: @zwierze.Srodowisko 

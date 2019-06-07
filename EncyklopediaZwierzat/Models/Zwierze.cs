@@ -13,6 +13,7 @@
         public string ZdjecieUrl { get; set; }
         public string MiniaturkaUrl { get; set; }
         public bool CzyZnajdeGoWPolsce { get; set; }
+        public bool CZyJestGatunkiemChronionym { get; set; }
 
     }
 }

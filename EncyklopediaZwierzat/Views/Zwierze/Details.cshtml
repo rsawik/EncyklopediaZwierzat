@@ -1,0 +1,27 @@
+﻿@model Zwierze
+
+<div>
+    <div class="thumbnail">
+        <div class="row">
+            <div class="col-md-6">
+                <img alt="@Model.Nazwa" src="@Model.ZdjecieUrl" height="500" width="500" />
+            </div>
+            <div class="col-md-3">
+                <h3>@Model.Nazwa</h3>
+                <h3>@Model.Rasa</h3>
+                <h4>@Model.Srodowisko</h4>
+                <h4>@Model.KrajWystepowania</h4>
+                <h4>@Model.SredniaDlugoscZycia</h4>
+                <h4>@Model.Odzywianie</h4>
+                <h4>@Model.Opis</h4>
+            </div>
+            <div class="col-md-3" style="padding-right:50px">
+                <h3 class="pull-right">
+                    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-success">Edycja</a>
+                    <a asp-action="Index" class="btn btn-success">Powrót</a>
+                </h3>
+            </div>
+        </div>
+    </div>
+</div>
+

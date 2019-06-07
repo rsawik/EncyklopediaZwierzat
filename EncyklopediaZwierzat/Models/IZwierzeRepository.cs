@@ -9,5 +9,8 @@ namespace EncyklopediaZwierzat.Models
     {
         IEnumerable<Zwierze> PobierzWszystkieZwierzeta();
         Zwierze PobierzZwierzeOId(int zwierzeID);
+        void DodajZwierze(Zwierze zwierze);
+        void EdytujZwierze(Zwierze zwierze);
+        void UsunZwierze(Zwierze zwierze);
     }
 }

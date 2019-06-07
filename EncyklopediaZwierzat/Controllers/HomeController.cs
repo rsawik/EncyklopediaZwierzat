@@ -29,5 +29,14 @@ namespace EncyklopediaZwierzat.Controllers
 
             return View(homeVM); //12 przekazanie do widoku tytul i liste samochodow
         }
+        public IActionResult Szczegoly(int id)
+        {
+            var zwierze = _zwierzeRepository.PobierzZwierzeOId(id);
+            if (zwierze == null)
+                return NotFound();
+
+
+            return View(zwierze);
+        }
     }
 }
