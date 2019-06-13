@@ -1,0 +1,29 @@
+﻿@model Zwierze
+
+<div>
+    <div class="thumbnail">
+        <div class="row">
+            <div class="col-md-6">
+                <img alt="@Model.Nazwa" src="@Model.ZdjecieUrl" height="500" width="500"/>             
+            </div>
+            <div class="col-md-6">
+                <h3>@Model.Nazwa</h3>
+                <h3>@Model.Rasa</h3>
+                <h4>@Model.Srodowisko</h4>
+                <h4>@Model.Odzywianie</h4>
+                <h4>@Model.KrajWystepowania</h4>
+                <h4>@Model.SredniaDlugoscZycia</h4>
+                <p>@Model.Opis</p>
+                <h2>Na pewno usunąć?</h2>
+                <h4 class="pull-right">
+                    <form asp-action="Delete">
+                        <input type="hidden" asp-for="Id"/>
+                        <input type="hidden" asp-for="ZdjecieUrl" />
+                        <input type="submit" value="Usuń" class="btn btn-succes"/>
+                        <a asp-action="Index" class="btn btn-succes">Powrót</a>
+                    </form>
+                </h4>
+            </div>
+        </div>
+    </div>
+</div>

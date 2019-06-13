@@ -1,11 +1,11 @@
 ﻿@model HomeVM
 <!--okreslenie modelu widoku typu zwierze (lista zwierzat)-->
 
-<h2>@Model.Tytul</h2>
+
 
 @foreach (var zwierze in Model.Zwierzeta)
 {
-    <div class="col-sm-4">
+    <div class="col-sm-3">
         <div class="thumbnail">
             <img src="@zwierze.MiniaturkaUrl" alt="" >
             <div class="caption">

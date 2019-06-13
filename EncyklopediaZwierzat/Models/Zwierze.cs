@@ -1,8 +1,11 @@
-﻿namespace EncyklopediaZwierzat.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace EncyklopediaZwierzat.Models
 {
     public class Zwierze //1
     {
         public int Id { get; set; }
+        [Required(ErrorMessage = "Nazwa jest wymagana.")]
         public string Nazwa { get; set; }
         public string Rasa { get; set; }
         public string Srodowisko { get; set; }
