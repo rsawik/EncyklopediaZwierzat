@@ -1,37 +1,37 @@
 ﻿@model HomeVM
-<!--okreslenie modelu widoku typu zwierze (lista zwierzat)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--okreslenie modelu widoku typu zwierze (lista zwierzat)-->
+    <link href="/content/stylehome.css" rel="stylesheet" />
 
-
-
-@foreach (var zwierze in Model.Zwierzeta)
-{
-    <div class="col-sm-3">
-        <div class="thumbnail">
-            <img src="@zwierze.MiniaturkaUrl" alt="" >
-            <div class="caption">
-                <h4 class="pull-right">@zwierze.Rasa</h4>
-                <h3>
-                    <a asp-controller="Home" asp-action="Szczegoly" asp-route-id="@zwierze.Id">@zwierze.Nazwa</a> 
-                </h3>
-                <h3>
-                    Środowisko: @zwierze.Srodowisko 
-                </h3>
-                <h3>
-                   Średnia długość życia: @zwierze.SredniaDlugoscZycia.ToString() lat
-                </h3>
-                <h4>
-                    Odżywianie: @zwierze.Odzywianie
-                </h4>
-                <h4>
-                    Kraj Wystepowania: @zwierze.KrajWystepowania
-                </h4>
-                <p>
-                    @zwierze.Opis
-                </p>
+    <div class="col-md-12">
+        <div class="main">
+            <div class="container1">
+                @foreach (var zwierze in Model.Zwierzeta)
+                {
+                    <div class="grid" style="background-image: url('@zwierze.MiniaturkaUrl')">
+                        <a href="#@zwierze.Id" class="heading">
+                            <span>Sprawdź</span>
+                        </a>
+                        <div class="details" id="@zwierze.Id">
+                            <a href="#" class="close">X</a>
+                            <h3>Kliknij by wyświetlić szczegóły</h3>
+                            <h1>
+                                <a asp-controller="Home" asp-action="Szczegoly" asp-route-id="@zwierze.Id">@zwierze.Nazwa</a>
+                            </h1>
+                            <h3>
+                                Środowisko: @zwierze.Srodowisko
+                            </h3>
+                        </div>
+                    </div>
+                }
             </div>
         </div>
     </div>
-}
+
+
+
+
+
 
 
 
