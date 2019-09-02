@@ -14,4 +14,7 @@ Weryfikacja wymagań wprowadzanych danych w formularzach.
 
 Tworząc projekt głównie stosowałem się do dokumentacji i do pomocy naukowych w postaci filmów z youtube.
 
-https://www.youtube.com/watch?v=sYrFkcShR1M&feature=youtu.be - film.
+
+[![Demo video](https://www.cgm.pl/wp-content/uploads/2017/10/YouTubeLogo1500-670x390.jpg)](https://www.youtube.com/watch?v=sYrFkcShR1M&feature=youtu.be)
+
+
